@@ -13,6 +13,23 @@ public class carro {
     private motor motor;
     private direcao direcao;
 
+    
+    public carro(){
+        motor = new motor();
+    }
+    
+    public void imprimeDados(){
+        System.out.println("Potencia do motor: "+motor.getPotencia());
+    }
+    
+    public carro(int potencia){
+        motor = new motor(potencia);
+    }
+    
+    public void ligarCarro(int potencia){
+        motor = new motor(potencia);
+    }
+    
     /**
      * @return the motor
      */

@@ -11,6 +11,16 @@ package composicao;
  */
 public class motor {
     private int potencia;
+    
+    
+    
+    public motor(){
+        potencia = 1000;
+    }
+    
+    public motor (int potencia){
+        this.potencia=potencia;
+    }
 
     /**
      * @return the potencia
